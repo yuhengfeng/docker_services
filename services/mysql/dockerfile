@@ -1,0 +1,41 @@
+#基础镜像
+FROM ubuntu:18.04
+#工作目录
+WORKDIR /etc/mysql
+#将sources.list复制到镜像下的/etc/apt/下面，修改镜像源地址
+ADD sources.list /etc/apt/
+#设置时区
+ENV TZ=Asia/Shanghai
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# # 安装mysql
+RUN apt-get clean && apt-get update && \
+    apt-get -y upgrade && \
+    apt-get -y install mysql-server
+#安装 vim
+RUN apt-get update && \
+    apt-get -y install vim && \
+    apt-get clean
+#安装 ping
+RUN apt-get update && \
+    apt-get -y install inetutils-ping && \
+    apt-get clean
+#安装 ps -ef | grep nginx
+RUN apt-get update && \
+    apt-get -y install procps && \
+    apt-get clean
+#安装 zip依赖 zlib
+RUN apt-get update && \
+    apt-get -y install zlib1g-dev && \
+    apt-get clean
+#安装zip
+RUN apt-get update && \
+    apt-get -y install unzip && \
+    apt-get clean
+#安装telnet
+RUN apt-get update && \
+    apt-get -y install telnet && \
+    apt-get clean
+#自启服务
+COPY *.sh /root/
+RUN chmod +x /root/mysql-start.sh
+CMD ["/root/mysql-start.sh"]

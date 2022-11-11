@@ -1,0 +1,93 @@
+version: '3.0'
+services:
+  nginx:
+    build: 
+      context: services/nginx
+      dockerfile: dockerfile
+    container_name: nginx
+    working_dir: /etc/nginx
+    restart: always
+    ports:
+      - 80:80
+    volumes:
+      - /Users/yuhengfeng/docker/docker_services/services/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - /Users/yuhengfeng/docker/docker_services/services/nginx/conf.d:/etc/nginx/conf.d
+      # - /Users/yuhengfeng/docker/docker_services/services/nginx/logs:/var/log/nginx
+      - /Users/yuhengfeng/docker/docker_services/project:/home/
+    tty: true
+    links:
+      - php5.6:9005
+      - php7.4:9007
+  #   # entrypoint: 
+  #   #   - /bin/bash
+  #   #   - /root/start.sh
+  #   # networks:
+  #   #   - proxy
+  # #php5.6
+  php5.6:
+    container_name: php5.6
+    working_dir: /etc/php/5.6
+    restart: always
+    build: 
+      context: services/php/5.6
+      dockerfile: dockerfile
+    ports:
+      - 9005:9005
+    expose: 
+      - 9005
+    volumes:
+      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/ext/20131226:/usr/lib/php/20131226
+      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/fpm/php-fpm.conf:/etc/php/5.6/fpm/php-fpm.conf
+      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/php.ini:/etc/php/5.6/fpm/php.ini
+      - /Users/yuhengfeng/docker/docker_services/project:/home
+      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/fpm/www.conf:/etc/php/5.6/fpm/pool.d/www.conf
+    tty: true
+  #   links: 
+  #     - mysql
+  #   # entrypoint: 
+  #   #   - /bin/bash
+  #   #   - /root/start.sh
+  #   # depends_on:
+  #   #   - nginx
+  #   # networks:
+  #   #   - service-net
+  # #php7.4
+  php7.4:
+    container_name: php7.4
+    working_dir: /etc/php/7.4
+    restart: always
+    build: 
+      context: services/php/7.4
+      dockerfile: dockerfile
+    # image: php:7.4
+    ports:
+      - 9007:9007
+    expose: 
+      - 9007
+    volumes:
+      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/ext/20190902:/usr/lib/php/20190902
+      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/fpm/php-fpm.conf:/etc/php/7.4/fpm/php-fpm.conf
+      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/php.ini:/etc/php/7.4/fpm/php.ini
+      - /Users/yuhengfeng/docker/docker_services/project:/home
+      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/fpm/www.conf:/etc/php/7.4/fpm/pool.d/www.conf
+      # - /Users/yuhengfeng/docker/docker_services/services/php/7.4/logs/php7.4-fpm.log:/var/log/php7.4-fpm.log
+    tty: true
+  #   links: 
+  #     - mysql
+  #   # entrypoint: 
+  #   #   - /bin/bash
+  #   #   - /root/start.sh
+  mysql:
+    # image: mysql:5.7
+    build: 
+      context: services/mysql
+      dockerfile: dockerfile
+    container_name: mysql5.7
+    working_dir: /etc/mysql
+    restart: always
+    ports:
+      - 3323:3306
+    volumes:
+      - /Users/yuhengfeng/docker/docker_services/services/mysql/conf/my.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+      # - /Users/yuhengfeng/docker/docker_services/services/mysql/error.log:/var/log/mysql/error.log
+    tty: true

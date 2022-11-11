@@ -1,0 +1,64 @@
+#基础镜像
+FROM ubuntu:20.04
+#工作目录
+WORKDIR /etc/php/7.4
+#将sources.list复制到镜像下的/etc/apt/下面，修改镜像源地址
+# ADD sources.list /etc/apt/
+#设置时区
+ENV TZ=Asia/Shanghai
+RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+#更新apt源
+RUN apt-get update && apt-get -y upgrade && apt-get install -y software-properties-common 
+RUN LC_ALL=C.UTF-8 add-apt-repository -y ppa:ondrej/php
+RUN apt-get update -y && apt-get install -y php7.4 \
+    libapache2-mod-php7.4 \
+    php7.4-fpm \
+    php7.4-mysql \
+    php7.4-soap \
+    php7.4-ldap \
+    php7.4-curl \
+    php7.4-mbstring \
+    php7.4-mcrypt \
+    php7.4-gd \
+    php7.4-xml \
+    php7.4-cli \
+    php7.4-zip \
+    php7.4-redis 
+
+#安装 vi vim
+RUN apt-get update && \
+    apt-get -y install vim && \
+    apt-get clean
+#安装 ping
+RUN apt-get update && \
+    apt-get -y install inetutils-ping && \
+    apt-get clean
+#安装 ps -ef | grep nginx
+RUN apt-get update && \
+    apt-get -y install procps && \
+    apt-get clean
+#安装 zip依赖 zlib
+RUN apt-get update && \
+    apt-get -y install zlib1g-dev && \
+    apt-get clean
+#安装zip
+RUN apt-get update && \
+    apt-get -y install unzip && \
+    apt-get clean
+#安装telnet
+RUN apt-get update && \
+    apt-get -y install telnet && \
+    apt-get clean
+#自启服务
+COPY *.sh /root/
+# RUN chmod +x /root/php-start.sh
+# CMD ["/root/php-start.sh"]
+RUN sed -i '$a\if [ -f /root/php-start.sh ]; then \n\ 
+    . /root/php-start.sh \n\ 
+fi' /root/.bashrc
+            
+                
+             
+
+
+
