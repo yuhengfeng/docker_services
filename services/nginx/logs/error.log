@@ -1,0 +1,7 @@
+2022/11/11 20:38:55 [notice] 21#21: using the "epoll" event method
+2022/11/11 20:38:55 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 20:38:55 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 20:38:55 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 20:38:55 [notice] 22#22: start worker processes
+2022/11/11 20:38:55 [notice] 22#22: start worker process 23
+2022/11/11 20:38:55 [notice] 22#22: start worker process 24

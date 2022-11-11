@@ -10,10 +10,10 @@ services:
     ports:
       - 80:80
     volumes:
-      - /Users/yuhengfeng/docker/docker_services/services/nginx/nginx.conf:/etc/nginx/nginx.conf
-      - /Users/yuhengfeng/docker/docker_services/services/nginx/conf.d:/etc/nginx/conf.d
-      # - /Users/yuhengfeng/docker/docker_services/services/nginx/logs:/var/log/nginx
-      - /Users/yuhengfeng/docker/docker_services/project:/home/
+      - ~/docker/docker_services/services/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ~/docker/docker_services/services/nginx/conf.d:/etc/nginx/conf.d
+      - ~/docker/docker_services/services/nginx/logs:/var/log/nginx
+      - ~/docker/docker_services/project:/home/
     tty: true
     links:
       - php5.6:9005
@@ -36,11 +36,11 @@ services:
     expose: 
       - 9005
     volumes:
-      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/ext/20131226:/usr/lib/php/20131226
-      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/fpm/php-fpm.conf:/etc/php/5.6/fpm/php-fpm.conf
-      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/php.ini:/etc/php/5.6/fpm/php.ini
-      - /Users/yuhengfeng/docker/docker_services/project:/home
-      - /Users/yuhengfeng/docker/docker_services/services/php/5.6/fpm/www.conf:/etc/php/5.6/fpm/pool.d/www.conf
+      - ~/docker/docker_services/services/php/5.6/ext/20131226:/usr/lib/php/20131226
+      - ~/docker/docker_services/services/php/5.6/fpm/php-fpm.conf:/etc/php/5.6/fpm/php-fpm.conf
+      - ~/docker/docker_services/services/php/5.6/php.ini:/etc/php/5.6/fpm/php.ini
+      - ~/docker/docker_services/project:/home
+      - ~/docker/docker_services/services/php/5.6/fpm/www.conf:/etc/php/5.6/fpm/pool.d/www.conf
     tty: true
   #   links: 
   #     - mysql
@@ -65,12 +65,11 @@ services:
     expose: 
       - 9007
     volumes:
-      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/ext/20190902:/usr/lib/php/20190902
-      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/fpm/php-fpm.conf:/etc/php/7.4/fpm/php-fpm.conf
-      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/php.ini:/etc/php/7.4/fpm/php.ini
-      - /Users/yuhengfeng/docker/docker_services/project:/home
-      - /Users/yuhengfeng/docker/docker_services/services/php/7.4/fpm/www.conf:/etc/php/7.4/fpm/pool.d/www.conf
-      # - /Users/yuhengfeng/docker/docker_services/services/php/7.4/logs/php7.4-fpm.log:/var/log/php7.4-fpm.log
+      - ~/docker/docker_services/services/php/7.4/ext/20190902:/usr/lib/php/20190902
+      - ~/docker/docker_services/services/php/7.4/fpm/php-fpm.conf:/etc/php/7.4/fpm/php-fpm.conf
+      - ~/docker/docker_services/services/php/7.4/php.ini:/etc/php/7.4/fpm/php.ini
+      - ~/docker/docker_services/project:/home
+      - ~/docker/docker_services/services/php/7.4/fpm/www.conf:/etc/php/7.4/fpm/pool.d/www.conf
     tty: true
   #   links: 
   #     - mysql
@@ -78,7 +77,6 @@ services:
   #   #   - /bin/bash
   #   #   - /root/start.sh
   mysql:
-    # image: mysql:5.7
     build: 
       context: services/mysql
       dockerfile: dockerfile
@@ -88,6 +86,7 @@ services:
     ports:
       - 3323:3306
     volumes:
-      - /Users/yuhengfeng/docker/docker_services/services/mysql/conf/my.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
-      # - /Users/yuhengfeng/docker/docker_services/services/mysql/error.log:/var/log/mysql/error.log
+      - ~/docker/docker_services/services/mysql/conf/my.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+      - ~/docker/docker_services/services/mysql/logs/error.log:/var/log/mysql/error.log
+      - ~/docker/docker_services/services/mysql/logs/mysql-slow.log:/var/log/mysql/mysql-slow.log
     tty: true
