@@ -5,3 +5,119 @@
 2022/11/11 20:38:55 [notice] 22#22: start worker processes
 2022/11/11 20:38:55 [notice] 22#22: start worker process 23
 2022/11/11 20:38:55 [notice] 22#22: start worker process 24
+2022/11/11 21:08:01 [error] 23#23: *3 open() "/home/php/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: test2.com, request: "GET /favicon.ico HTTP/1.1", host: "test2.com", referrer: "http://test2.com/"
+2022/11/11 21:34:17 [notice] 21#21: using the "epoll" event method
+2022/11/11 21:34:17 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 21:34:17 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 21:34:17 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 21:34:17 [notice] 22#22: start worker processes
+2022/11/11 21:34:17 [notice] 22#22: start worker process 23
+2022/11/11 21:34:17 [notice] 22#22: start worker process 24
+2022/11/11 21:55:38 [error] 23#23: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: test2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.3:9007", host: "test2.com"
+2022/11/11 21:55:41 [error] 23#23: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: test2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.3:9007", host: "test2.com"
+2022/11/11 21:56:08 [error] 23#23: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 172.18.0.1, server: test2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.18.0.3:9007", host: "test2.com"
+2022/11/11 21:57:22 [notice] 21#21: using the "epoll" event method
+2022/11/11 21:57:22 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 21:57:22 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 21:57:22 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 21:57:22 [notice] 22#22: start worker processes
+2022/11/11 21:57:22 [notice] 22#22: start worker process 23
+2022/11/11 21:57:22 [notice] 22#22: start worker process 24
+2022/11/11 22:13:44 [notice] 21#21: using the "epoll" event method
+2022/11/11 22:13:44 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 22:13:44 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 22:13:44 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 22:13:44 [notice] 22#22: start worker processes
+2022/11/11 22:13:44 [notice] 22#22: start worker process 23
+2022/11/11 22:13:44 [notice] 22#22: start worker process 24
+2022/11/11 22:14:40 [notice] 21#21: using the "epoll" event method
+2022/11/11 22:14:40 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 22:14:40 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 22:14:40 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 22:14:40 [notice] 22#22: start worker processes
+2022/11/11 22:14:40 [notice] 22#22: start worker process 23
+2022/11/11 22:14:40 [notice] 22#22: start worker process 24
+2022/11/11 22:14:43 [error] 23#23: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: test2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9007", host: "test2.com"
+2022/11/11 22:14:44 [error] 23#23: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: test2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9007", host: "test2.com"
+2022/11/11 22:15:08 [error] 23#23: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 172.20.0.1, server: test2.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9007", host: "test2.com"
+2022/11/11 22:15:40 [notice] 21#21: using the "epoll" event method
+2022/11/11 22:15:40 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 22:15:40 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 22:15:40 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 22:15:40 [notice] 22#22: start worker processes
+2022/11/11 22:15:40 [notice] 22#22: start worker process 23
+2022/11/11 22:15:40 [notice] 22#22: start worker process 24
+2022/11/11 22:16:29 [notice] 21#21: using the "epoll" event method
+2022/11/11 22:16:29 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 22:16:29 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 22:16:29 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 22:16:29 [notice] 22#22: start worker processes
+2022/11/11 22:16:29 [notice] 22#22: start worker process 23
+2022/11/11 22:16:29 [notice] 22#22: start worker process 24
+2022/11/11 22:16:47 [notice] 21#21: using the "epoll" event method
+2022/11/11 22:16:47 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 22:16:47 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 22:16:47 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 22:16:47 [notice] 22#22: start worker processes
+2022/11/11 22:16:47 [notice] 22#22: start worker process 23
+2022/11/11 22:16:47 [notice] 22#22: start worker process 24
+2022/11/11 22:29:52 [notice] 21#21: using the "epoll" event method
+2022/11/11 22:29:52 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 22:29:52 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 22:29:52 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 22:29:52 [notice] 22#22: start worker processes
+2022/11/11 22:29:52 [notice] 22#22: start worker process 23
+2022/11/11 22:29:52 [notice] 22#22: start worker process 24
+2022/11/11 22:30:10 [notice] 21#21: using the "epoll" event method
+2022/11/11 22:30:10 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/11 22:30:10 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/11 22:30:10 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/11 22:30:10 [notice] 22#22: start worker processes
+2022/11/11 22:30:10 [notice] 22#22: start worker process 23
+2022/11/11 22:30:10 [notice] 22#22: start worker process 24
+2022/11/12 22:26:38 [error] 23#23: *13 open() "/home/php/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /favicon.ico HTTP/1.1", host: "172.20.10.7", referrer: "http://172.20.10.7/"
+2022/11/12 22:51:06 [error] 23#23: *30 open() "/home/php/edgedl/release2/chrome_component/addydctc7imrvsvsejkhsc2hj3ga_2886/jflookgnkcckhobaglndicnbbgbonegd_2886_all_actmoyhincymkna44iyzd7z2pbda.crx3" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/release2/chrome_component/addydctc7imrvsvsejkhsc2hj3ga_2886/jflookgnkcckhobaglndicnbbgbonegd_2886_all_actmoyhincymkna44iyzd7z2pbda.crx3 HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/12 22:51:06 [error] 23#23: *30 open() "/home/php/edgedl/release2/chrome_component/ada26754yjs6qv3rpx2wxtckzjba_365/lmelglejhemejginpboagddgdfbepgmp_365_all_ZZ_adxxitkrxjvopjo336hwsrzj6pia.crx3" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/release2/chrome_component/ada26754yjs6qv3rpx2wxtckzjba_365/lmelglejhemejginpboagddgdfbepgmp_365_all_ZZ_adxxitkrxjvopjo336hwsrzj6pia.crx3 HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/12 22:51:07 [error] 23#23: *30 open() "/home/php/edgedl/release2/chrome_component/axr4p2x6ckgcz6takr7t4eosci_7698/hfnkpimlhhgieaddgfemjhofmfblmnib_7698_all_acyjz3cveljecggobjlky5ipuqga.crx3" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/release2/chrome_component/axr4p2x6ckgcz6takr7t4eosci_7698/hfnkpimlhhgieaddgfemjhofmfblmnib_7698_all_acyjz3cveljecggobjlky5ipuqga.crx3 HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/13 00:13:40 [notice] 21#21: using the "epoll" event method
+2022/11/13 00:13:40 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/13 00:13:40 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/13 00:13:40 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/13 00:13:40 [notice] 22#22: start worker processes
+2022/11/13 00:13:40 [notice] 22#22: start worker process 23
+2022/11/13 00:13:40 [notice] 22#22: start worker process 24
+2022/11/13 00:15:11 [notice] 21#21: using the "epoll" event method
+2022/11/13 00:15:11 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/13 00:15:11 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/13 00:15:11 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/13 00:15:11 [notice] 22#22: start worker processes
+2022/11/13 00:15:11 [notice] 22#22: start worker process 23
+2022/11/13 00:15:11 [notice] 22#22: start worker process 24
+2022/11/15 14:41:08 [error] 24#24: *5 open() "/home/php/edgedl/delta-update/jflookgnkcckhobaglndicnbbgbonegd/1.3f69fd4394e5f6920a0e71158674a5a4bcf44d3a8a4e8ecbff19d14f9c649a49/1.fcd2afd35b396875901a35311b5417abee71de6f5c21ac51406855c67bd1cf0b/a883040e24e38fe835ed8348a0a6a0aafcc4195fd1c9df821e0f0421598fa3e4.crxd" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/delta-update/jflookgnkcckhobaglndicnbbgbonegd/1.3f69fd4394e5f6920a0e71158674a5a4bcf44d3a8a4e8ecbff19d14f9c649a49/1.fcd2afd35b396875901a35311b5417abee71de6f5c21ac51406855c67bd1cf0b/a883040e24e38fe835ed8348a0a6a0aafcc4195fd1c9df821e0f0421598fa3e4.crxd HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/15 14:41:08 [error] 24#24: *5 open() "/home/php/edgedl/release2/chrome_component/jkeo5tkdf7khk7rutckqb33wpq_2888/jflookgnkcckhobaglndicnbbgbonegd_2888_all_e6hncikl6krakvaq52wpvyiuue.crx3" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/release2/chrome_component/jkeo5tkdf7khk7rutckqb33wpq_2888/jflookgnkcckhobaglndicnbbgbonegd_2888_all_e6hncikl6krakvaq52wpvyiuue.crx3 HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/15 14:41:09 [error] 24#24: *5 open() "/home/php/edgedl/delta-update/lmelglejhemejginpboagddgdfbepgmp/1.77ee1b91579e79b8c383959e04e85789220bc1e30b96663eba8273e0100a2200/1.be2a85536b56e5b705d0fccff729871c8021d8084659d0f69c6eed389054e123/b8b12cceee201dcd31e69885acb1335dfe29b4555def5bf787aba50563d084fc.crxd" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/delta-update/lmelglejhemejginpboagddgdfbepgmp/1.77ee1b91579e79b8c383959e04e85789220bc1e30b96663eba8273e0100a2200/1.be2a85536b56e5b705d0fccff729871c8021d8084659d0f69c6eed389054e123/b8b12cceee201dcd31e69885acb1335dfe29b4555def5bf787aba50563d084fc.crxd HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/15 14:41:09 [error] 24#24: *5 open() "/home/php/edgedl/release2/chrome_component/adq6hjb5ffojn5ktkoa6peqivsna_366/lmelglejhemejginpboagddgdfbepgmp_366_all_ZZ_jnywdmtie5h4cskdfeggk5wctm.crx3" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/release2/chrome_component/adq6hjb5ffojn5ktkoa6peqivsna_366/lmelglejhemejginpboagddgdfbepgmp_366_all_ZZ_jnywdmtie5h4cskdfeggk5wctm.crx3 HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/15 14:41:10 [error] 24#24: *5 open() "/home/php/edgedl/release2/chrome_component/csglxhce6woequnyjr5txk3ury_7703/hfnkpimlhhgieaddgfemjhofmfblmnib_7703_all_acsi5spohqdp4xrphvwswyvwpmfa.crx3" failed (2: No such file or directory), client: 172.20.0.1, server: test.com, request: "GET /edgedl/release2/chrome_component/csglxhce6woequnyjr5txk3ury_7703/hfnkpimlhhgieaddgfemjhofmfblmnib_7703_all_acsi5spohqdp4xrphvwswyvwpmfa.crx3 HTTP/1.1", host: "edgedl.me.gvt1.com"
+2022/11/21 09:15:22 [error] 24#24: *8 open() "/home/php/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: test2.com, request: "GET /favicon.ico HTTP/1.1", host: "test2.com", referrer: "http://test2.com/"
+2022/11/21 17:12:44 [emerg] 21#21: host not found in upstream "php5.6" in /etc/nginx/conf.d/default.conf:33
+2022/11/21 17:14:18 [emerg] 21#21: host not found in upstream "php5.6" in /etc/nginx/conf.d/default.conf:33
+2022/11/21 17:14:23 [emerg] 49#49: host not found in upstream "php5.6" in /etc/nginx/conf.d/default.conf:33
+2022/11/21 17:14:28 [emerg] 50#50: host not found in upstream "php5.6" in /etc/nginx/conf.d/default.conf:33
+2022/11/21 17:19:06 [notice] 21#21: using the "epoll" event method
+2022/11/21 17:19:06 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/21 17:19:06 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/21 17:19:06 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/21 17:19:06 [notice] 22#22: start worker processes
+2022/11/21 17:19:06 [notice] 22#22: start worker process 23
+2022/11/21 17:19:06 [notice] 22#22: start worker process 24
+2022/11/21 17:21:57 [notice] 21#21: using the "epoll" event method
+2022/11/21 17:21:57 [notice] 21#21: nginx/1.18.0 (Ubuntu)
+2022/11/21 17:21:57 [notice] 21#21: OS: Linux 5.15.49-linuxkit
+2022/11/21 17:21:57 [notice] 21#21: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2022/11/21 17:21:57 [notice] 22#22: start worker processes
+2022/11/21 17:21:57 [notice] 22#22: start worker process 23
+2022/11/21 17:21:57 [notice] 22#22: start worker process 24
+2022/11/21 17:42:24 [error] 23#23: *18 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/php/fastadmin/public/index.php on line 3PHP message: PHP Stack trace:PHP message: PHP   1. {main}() /home/php/fastadmin/public/index.php:0PHP message: PHP   2. mysqli->__construct($host = '127.0.0.1', $user = 'root', $password = '123456', $database = 'fastadmin') /home/php/fastadmin/public/index.php:3PHP message: PHP Warning:  Use of undefined constant link - assumed 'link' (this will throw an Error in a future version of PHP) in /home/php/fastadmin/public/index.php on line 4PHP message: PHP Stack trace:PHP message: PHP   1. {main}() /home/php/fastadmin/public/index.php:0" while reading response header from upstream, client: 172.20.0.1, server: test.fastadmin.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9007", host: "test.fastadmin.com"
+2022/11/21 17:42:24 [error] 23#23: *18 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/php/fastadmin/public/index.php on line 3PHP message: PHP Stack trace:PHP message: PHP   1. {main}() /home/php/fastadmin/public/index.php:0PHP message: PHP   2. mysqli->__construct($host = '127.0.0.1', $user = 'root', $password = '123456', $database = 'fastadmin') /home/php/fastadmin/public/index.php:3PHP message: PHP Warning:  Use of undefined constant link - assumed 'link' (this will throw an Error in a future version of PHP) in /home/php/fastadmin/public/index.php on line 4PHP message: PHP Stack trace:PHP message: PHP   1. {main}() /home/php/fastadmin/public/index.php:0" while reading response header from upstream, client: 172.20.0.1, server: test.fastadmin.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.20.0.2:9007", host: "test.fastadmin.com", referrer: "http://test.fastadmin.com/"
+2022/11/21 17:42:37 [error] 23#23: *18 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/php/fastadmin/public/index.php on line 3PHP message: PHP Stack trace:PHP message: PHP   1. {main}() /home/php/fastadmin/public/index.php:0PHP message: PHP   2. mysqli->__construct($host = '127.0.0.1', $user = 'root', $password = '123456', $database = 'fastadmin') /home/php/fastadmin/public/index.php:3" while reading response header from upstream, client: 172.20.0.1, server: test.fastadmin.com, request: "GET / HTTP/1.1", upstream: "fastcgi://172.20.0.2:9007", host: "test.fastadmin.com"
+2022/11/21 17:42:37 [error] 23#23: *18 FastCGI sent in stderr: "PHP message: PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in /home/php/fastadmin/public/index.php on line 3PHP message: PHP Stack trace:PHP message: PHP   1. {main}() /home/php/fastadmin/public/index.php:0PHP message: PHP   2. mysqli->__construct($host = '127.0.0.1', $user = 'root', $password = '123456', $database = 'fastadmin') /home/php/fastadmin/public/index.php:3" while reading response header from upstream, client: 172.20.0.1, server: test.fastadmin.com, request: "GET /favicon.ico HTTP/1.1", upstream: "fastcgi://172.20.0.2:9007", host: "test.fastadmin.com", referrer: "http://test.fastadmin.com/"

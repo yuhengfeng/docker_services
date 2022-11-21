@@ -9,6 +9,8 @@ services:
     restart: always
     ports:
       - 80:80
+    expose:
+      - 9001
     volumes:
       - ~/docker/docker_services/services/nginx/nginx.conf:/etc/nginx/nginx.conf
       - ~/docker/docker_services/services/nginx/conf.d:/etc/nginx/conf.d

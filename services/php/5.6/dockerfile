@@ -27,7 +27,7 @@ RUN apt-get install -y php5.6 \
     php5.6-cli \
     php5.6-zip \
     php5.6-redis 
-
+RUN apt-get install -y php5.6-xdebug
 #安装 vi vim
 RUN apt-get update && \
     apt-get -y install vim && \
@@ -52,6 +52,12 @@ RUN apt-get update && \
 RUN apt-get update && \
     apt-get -y install telnet && \
     apt-get clean
+#安装composer
+RUN php -r "copy('https://install.phpcomposer.com/installer', 'composer-setup.php');"
+RUN php composer-setup.php
+RUN php -r "unlink('composer-setup.php');"
+RUN mv composer.phar /usr/local/bin/composer
+RUN composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
 #自启服务
 COPY *.sh /root/
 # RUN chmod +x /root/php-start.sh
